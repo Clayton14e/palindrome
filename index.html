@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <script src="index.js">
+        </script>
+    </head>
+    <body>
+    <div class="container">
+        <div class="modal">
+            <h2>Palindrome Test</h2>
+            <form class="inputform">
+                <input type="text" placeholder="Enter Word to Test" id="testword"></input>
+                <button type="button" onclick="isPalindrome(document.getElementById('testword').value)" id="testbutton">Test</button>
+            </form>
+            <h4>Palindromes:</h4>
+            <ul id="palindrome-list">
+
+            </ul>
+            <h4>Not Palindromes:</h4>
+            <ul id="not-palindromes">
+
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>
