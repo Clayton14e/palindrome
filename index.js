@@ -11,15 +11,13 @@ let isPalindrome = function(word){
             // document.getElementById('not-palindromes').appendChild(li);
             return false;
         }
-        else {
-            let ul = document.getElementById('palindrome-list');
-            let li = document.createElement('li');
-            let item = document.getElementById('testword');
-            li.appendChild(document.createTextNode(item.value));
-            ul.appendChild(li);
-            return true;
-        }
     }
+    let ul = document.getElementById('palindrome-list');
+    let li = document.createElement('li');
+    let item = document.getElementById('testword');
+    li.appendChild(document.createTextNode(item.value));
+    ul.appendChild(li);
+    return true;
 }
 
 // console.log(isPalindrome('racecar'));
